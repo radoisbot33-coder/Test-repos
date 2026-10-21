@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PALM CITY — Midnight Run</title><link rel="stylesheet" href="style.css"></head><body>
+<canvas id="game" aria-label="Jeu Palm City en vue du dessus"></canvas>
+<div class="grain"></div>
+<header><a class="brand" href="./">PALM<span>CITY</span><small>THE MIDNIGHT RUN</small></a><div class="district"><i></i> VICE HARBOR <span> / </span> 23:48</div><button id="sound" title="Activer ou couper le son">SON : OFF</button></header>
+<aside class="mission"><div class="eyebrow">LA VILLE N’ATTEND PAS</div><h1>Une dernière<br><em>course.</em></h1><p id="brief">Récupère la voiture au repère jaune,<br>puis livre-la au garage du port.</p><div class="objective"><span id="step">01</span><div><small>OBJECTIF ACTUEL</small><strong id="objective">Rejoins la voiture de livraison</strong></div></div><div class="reward">RÉCOMPENSE <b id="reward">$ 2 500</b></div></aside>
+<section class="stats"><div class="wanted"><span>RECHERCHE</span><b id="stars">☆☆☆☆☆</b></div><div class="cash" id="cash">$ 000000</div><div class="health"><span>+</span><div><i id="health"></i></div><small id="hp">100</small></div></section>
+<div id="toast" role="status"></div>
+<div class="bottom-left"><div class="map-frame"><canvas id="map" width="170" height="170"></canvas><span>N</span></div><div class="map-caption"><i></i> VICE HARBOR <b id="distance">— M</b></div></div>
+<div class="controls"><div><kbd>Z</kbd><kbd>Q</kbd><kbd>S</kbd><kbd>D</kbd><span>SE DÉPLACER</span></div><div><kbd>E</kbd><span>ENTRER / SORTIR</span></div><div><kbd>ESPACE</kbd><span>FREIN / COURIR</span></div><div><kbd>P</kbd><span>PAUSE</span></div></div>
+<div class="speed"><small id="mode">À PIED</small><strong id="speed">00</strong><span>KM/H</span></div>
+<div id="overlay" class="hidden"><div class="modal"><div class="eyebrow">PALM CITY / MIDNIGHT RUN</div><h2 id="overlay-title">En pause.</h2><p id="overlay-text">La nuit est encore jeune.</p><button id="resume">REPRENDRE LA COURSE ↗</button></div></div>
+<div class="mobile"><button data-key="w">▲</button><button data-key="a">◀</button><button data-key="s">▼</button><button data-key="d">▶</button><button data-key="e">E</button><button data-key=" ">●</button></div>
+<script src="game.js"></script></body></html>
